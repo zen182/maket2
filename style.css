@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items: center;
+}
+
+header .left, .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left img {
+    margin-right: 80px;
+}
+
+.navigation a {
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+.navigation a:last-child {
+    margin-right: 0
+}
+
+.right .tel {
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.right .icons {
+    display: flex;
+}
+
+.right .dot {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #F2F3F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons .dot:last-child {
+    margin-right: 0;
+}
+
+.right img {
+    width: 20px;
+    height: 20px;
+}
+
+/* 1-ST BLOCK */
+.first-block {
+    margin: 0 80px 40px 80px;
+    padding: 140px 0 160px 60px;
+    background: #F5F5F5;
+    background-image: url("./images/wheel-tire-1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+}
+
+.first-block h1 {
+    font-size: 41px;
+    line-height: 53px;
+    font-weight: 700;
+    width: 625px;
+    margin-bottom: 10px;
+}
+
+.first-block p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+.first-block .search {
+    position: relative;
+}
+
+.first-block input {
+    width: 514px;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.6);
+    background: #F5F5F5;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.first-block button {
+    width: 75px;
+    padding: 20px;
+    background: rgba(66, 0, 255, 0.8);
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    position: absolute;
+    left: 438px;
+  }
+
+/* 2-ND BLOCK */
+.second-block {
+    margin: 0 80px 80px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-block .card {
+    background: #FFFFFF;
+    border: 1.5px solid #F2F2F2;
+    border-radius: 5px;
+    display: flex;
+}
+
+.second-block .card img {
+    height: 140px;
+}
+.second-block .card-img {
+    width: 160px;
+    background: #F9F9F9;
+    border-radius: 4px 0px 0px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-block .card-text {
+    padding: 36px 30px 0 15px;
+}
+
+.second-block .card-text h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+.second-block .card-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* 3-RD BLOCK */
+.third-block {
+    margin: 0 80px 80px 80px;
+    display: flex;
+}
+
+.third-block .sidebar-column {
+    padding: 10px 10px 0 10px;
+    margin-right: 20px;
+    background: #F7F7F7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 380px;
+    flex-shrink: 0;
+}
+
+.third-block .sidebar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 0;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 20px;
+}
+
+.third-block .sidebar-row.active {
+    background: #4200FF;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.third-block .sidebar-row .row-img {
+    width: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-block .sidebar-row .row-text {
+    flex-grow: 1;
+}
+
+.third-block .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #F7F7F7;
+}
+
+.third-block .cards .card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 278px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.third-block .cards .card-img {
+    width: 278px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F7F7F7;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.third-block .cards .card-text {
+    padding: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.third-block .cards .card-text h5 {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+/* 4-TH BLOCK */
+.fourth-block {
+    margin: 0 80px 80px 80px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.fourth-block .card {
+    background: #FFFFFF;
+    border: 1.5px solid #F2F2F2;
+    border-radius: 5px;
+    display: flex;
+}
+
+.fourth-block .card-img {
+    width: 160px;
+    background: #F9F9F9;
+    border-radius: 4px 0px 0px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-block .card-text {
+    padding: 36px 30px 0 15px;
+}
+
+.fourth-block .card-text h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+.fourth-block .card-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* 5-TH BLOCK */
+.fifth-block {
+    margin: 0 80px 80px 80px;
+    background: #F7F7F7;
+    border-radius: 5px;
+    display: flex;
+}
+
+.fifth-block .fifth-text {
+    padding: 80px 0 0 40px;
+    flex-grow: 1;
+}
+
+.fifth-block .fifth-text h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    margin-bottom: 54px;
+}
+
+.fifth-block .fifth-text button {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    background: #F7F7F7;
+    border-radius: 5px;
+    padding: 12px 30px;
+}
+
+.fifth-block .fifth-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
