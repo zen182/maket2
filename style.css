@@ -127,8 +127,9 @@ header .left, .right {
 .second-block {
     margin: 0 80px 80px 80px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 20px;
 }
 
 .second-block .card {
@@ -138,11 +139,9 @@ header .left, .right {
     display: flex;
 }
 
-.second-block .card img {
-    height: 140px;
-}
 .second-block .card-img {
     width: 160px;
+    height: 140px;
     background: #F9F9F9;
     border-radius: 4px 0px 0px 4px;
     display: flex;
@@ -162,6 +161,7 @@ header .left, .right {
 }
 
 .second-block .card-text p {
+    width: 194px;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -172,6 +172,12 @@ header .left, .right {
 .third-block {
     margin: 0 80px 80px 80px;
     display: flex;
+    flex-direction: column;
+}
+
+.third-block .main {
+    display: flex;
+    margin-bottom: 40px;
 }
 
 .third-block .sidebar-column {
@@ -212,24 +218,41 @@ header .left, .right {
     flex-grow: 1;
 }
 
-.third-block .cards {
+.third-block .paging {
+    align-self: flex-end;
+}
+
+.third-block ul {
+    display: flex;
+    list-style: none;
+}
+
+.third-block li {
+    margin-right: 8px;
+    background: #FFFFFF;
+    border: 1px solid #DFE3E8;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.cards {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
     background: #F7F7F7;
 }
 
-.third-block .cards .card {
+.cards .card {
     display: flex;
     flex-direction: column;
     flex-basis: 278px;
-    margin-bottom: 20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
-.third-block .cards .card-img {
+.cards .card-img {
     width: 278px;
     display: flex;
     justify-content: center;
@@ -238,25 +261,40 @@ header .left, .right {
     border-radius: 5px 5px 0px 0px;
 }
 
-.third-block .cards .card-text {
-    padding: 20px 0 0 20px;
+.cards .card-text {
+    padding: 20px 0 20px 20px;
     display: flex;
     flex-direction: column;
 }
 
-.third-block .cards .card-text h5 {
+.cards .card-text h5 {
     font-weight: 500;
     font-size: 17px;
     line-height: 22px;
     margin-bottom: 20px;
 }
 
+.cards .card-text .price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #4200FF;
+}
+
+.cards .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
 /* 4-TH BLOCK */
 .fourth-block {
     margin: 0 80px 80px 80px;
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 20px;
 }
 
 .fourth-block .card {
@@ -268,6 +306,7 @@ header .left, .right {
 
 .fourth-block .card-img {
     width: 160px;
+    height: 140px;
     background: #F9F9F9;
     border-radius: 4px 0px 0px 4px;
     display: flex;
@@ -287,6 +326,7 @@ header .left, .right {
 }
 
 .fourth-block .card-text p {
+    width: 194px;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -328,3 +368,67 @@ header .left, .right {
     align-items: center;
 }
 
+/* 6-TH BLOCK */
+.sixth-block {
+    margin: 0 80px 80px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sixth-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.sixth-top p {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.sixth-block .card-img {
+    height: 230px;
+    width: 303px;
+}
+
+/* 7-TH BLOCK */
+.seventh-block {
+    margin: 0 80px 80px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.seventh-block .seventh-top {
+    margin-bottom: 30px;
+}
+
+.seventh-block p {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.seveth-brands {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.brand-card {
+    width: 303px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F7F7F7;
+    border-radius: 5px;
+}
+
+.brand-card .brand-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+}
