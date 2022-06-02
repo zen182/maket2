@@ -267,6 +267,10 @@ header .left, .right {
     flex-direction: column;
 }
 
+.cards .card-text .stars {
+    color: #FED712;
+}
+
 .cards .card-text h5 {
     font-weight: 500;
     font-size: 17px;
@@ -431,4 +435,9 @@ header .left, .right {
     font-weight: 700;
     font-size: 32px;
     line-height: 42px;
+}
+
+/* FOOTER */
+footer {
+    background: #2F2F2F;
 }
