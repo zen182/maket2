@@ -455,6 +455,10 @@ footer a {
     font-size: 30px;
 }
 
+.footer-right-icons i:last-child {
+    margin-right: 0
+}
+
 @media (max-width: 1440px) {
     header {
         padding: 0 30px;
