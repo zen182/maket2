@@ -394,7 +394,7 @@ header .left, header .right {
 }
 
 .brand-card {
-    width: 303px;
+    min-width: 303px;
     height: 180px;
     display: flex;
     flex-direction: column;
@@ -402,6 +402,7 @@ header .left, header .right {
     align-items: center;
     background: #F7F7F7;
     border-radius: 5px;
+    flex: 1;
 }
 
 .brand-card .brand-title {
@@ -413,6 +414,45 @@ header .left, header .right {
 /* FOOTER */
 footer {
     background: #2F2F2F;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px 100px 80px;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 30%;
+}
+
+footer h5 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-left .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right-icons i {
+    margin-right: 25px;
+    font-size: 30px;
 }
 
 @media (max-width: 1440px) {
@@ -438,6 +478,10 @@ footer {
 
     .third-block .sidebar-column {
         flex-basis: 320px;
+    }
+
+    footer {
+        padding: 30px;
     }
 }
 
