@@ -99,7 +99,7 @@ header .left, header .right {
     background: #F5F5F5;
     background-image: url("./images/wheel-tire-1.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom 60px right -100px;
     border-radius: 10px;
 }
 
@@ -486,6 +486,12 @@ footer a {
 
     footer {
         padding: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .first-block {
+        background-image: none;
     }
 }
 
