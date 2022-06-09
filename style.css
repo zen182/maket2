@@ -14,8 +14,16 @@ body {
     color: var(--black);
 }
 
-section {
-    margin: 0 80px 80px 80px;
+header,
+main,
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 a {
@@ -95,6 +103,10 @@ header .left, header .right {
 
 /* 1-ST BLOCK */
 .first-block {
+    margin-bottom: 40px;
+}
+
+.first-block .content {
     padding: 140px 0 160px 60px;
     background: #F5F5F5;
     background-image: url("./images/wheel-tire-1.png");
@@ -107,7 +119,7 @@ header .left, header .right {
     font-size: 41px;
     line-height: 53px;
     font-weight: 700;
-    width: 625px;
+    max-width: 625px;
     margin-bottom: 10px;
 }
 
@@ -120,10 +132,11 @@ header .left, header .right {
 
 .first-block .search {
     position: relative;
+    max-width: 514px;
 }
 
 .first-block input {
-    width: 514px;
+    width: 100%;
     font-size: 18px;
     line-height: 23px;
     color: rgba(0, 0, 0, 0.6);
@@ -141,10 +154,14 @@ header .left, header .right {
     border: 2px solid rgba(0, 0, 0, 0.4);
     cursor: pointer;
     position: absolute;
-    left: 438px;
+    right: 0;
   }
 
 /* 2-ND BLOCK */
+.second-block {
+    margin-bottom: 80px;
+}
+
 .articles {
     display: flex;
     flex-wrap: wrap;
@@ -191,8 +208,7 @@ header .left, header .right {
 
 /* 3-RD BLOCK */
 .third-block {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .third-block .main {
@@ -313,8 +329,17 @@ header .left, header .right {
     align-items: center;
 }
 
+/* 4-TH BLOCK */
+.fourth-block {
+ margin-bottom: 80px;
+}
+
 /* 5-TH BLOCK */
 .fifth-block {
+    margin-bottom: 80px;
+}
+
+.fifth-block .content {
     background: #F7F7F7;
     border-radius: 5px;
     display: flex;
@@ -322,7 +347,7 @@ header .left, header .right {
 
 .fifth-block .fifth-text {
     padding: 80px 0 0 40px;
-    flex-grow: 1;
+    width: 40%;
 }
 
 .fifth-block .fifth-text h3 {
@@ -345,12 +370,14 @@ header .left, header .right {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
 /* 6-TH BLOCK */
 .sixth-block {
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 
 .sixth-top {
@@ -374,6 +401,7 @@ header .left, header .right {
 .seventh-block {
     display: flex;
     flex-direction: column;
+    margin-bottom: 120px;
 }
 
 .seventh-block .seventh-top {
@@ -459,7 +487,7 @@ footer a {
     margin-right: 0
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
     header {
         padding: 0 30px;
     }
@@ -487,11 +515,15 @@ footer a {
     footer {
         padding: 30px;
     }
-}
+} */
 
 @media (max-width: 1200px) {
     .first-block {
         background-image: none;
+    }
+
+    .first-block h1 {
+        max-width: none;
     }
 }
 
@@ -527,11 +559,24 @@ footer a {
         order: 1;
         margin-bottom: 5px;
     }
+
+    .fifth-block {
+        flex-direction: column;
+    }
+
+    .fifth-block .fifth-text,
+    .fifth-block .fifth-img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     section {
         margin: 0 10px 40px 10px;
+    }
+
+    .first-block {
+        padding: 70px 0 80px 30px;
     }
 
     .third-block .main {
